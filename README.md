@@ -67,3 +67,9 @@
 
 ---
 
+### **File and Directory Transfer**
+
+**Secure Copy Operations:**
+- `scp <source> <destination>`: Securely copy a file from the source to the destination.
+  - `scp -r cloudpath localpath`: Securely copy a directory (and its contents) from a remote path to a local path.
+
