@@ -4,72 +4,229 @@
 
 ### **File and Directory Management**
 
+---
+
 **Directory Operations:**
-- `mkdir <dirname>`: Create a new directory.
-  - `mkdir -p dir1/dir2/dir3`: Create nested directories.
-  
-- `cd <dirname>`: Change the current directory.
-  - `cd ..`: Move up one directory.
-  - `cd`: Go to home directory.
-  
-- `pwd`: Print the current working directory.
-  
-- `rm -r <dirname>`: Remove a directory and its contents.
-  - `rm -rf <dirname>`: Forcefully remove a directory and its contents.
+
+- **Create a New Directory:** 
+  ```bash
+  mkdir <dirname>
+  ```
+
+- **Create Nested Directories:** 
+  ```bash
+  mkdir -p dir1/dir2/dir3
+  ```
+
+- **Change Directory:** 
+  ```bash
+  cd <dirname>
+  ```
+
+- **Move Up One Directory:** 
+  ```bash
+  cd ..
+  ```
+
+- **Go to Home Directory:** 
+  ```bash
+  cd
+  ```
+
+- **Print Current Directory:** 
+  ```bash
+  pwd
+  ```
+
+- **Remove Directory and Contents:** 
+  ```bash
+  rm -r <dirname>
+  ```
+
+- **Forcefully Remove Directory:** 
+  ```bash
+  rm -rf <dirname>
+  ```
+
+---
 
 **File Operations:**
-- `touch <filename>`: Create/update a file.
-  
-- `rm <filename>`: Remove a file.
-  - `rm -f <filename>`: Forcefully remove a file.
-  
-- `echo "<text>"`: Display text.
-  - `echo "<text>" >> <filename>`: Append text to a file.
-  
-- `vim <filename>`: Open a file in Vim.
+
+- **Create/Update File:** 
+  ```bash
+  touch <filename>
+  ```
+
+- **Remove File:** 
+  ```bash
+  rm <filename>
+  ```
+
+- **Forcefully Remove File:** 
+  ```bash
+  rm -f <filename>
+  ```
+
+- **Display Text:** 
+  ```bash
+  echo "<text>"
+  ```
+
+- **Append Text to File:** 
+  ```bash
+  echo "<text>" >> <filename>
+  ```
+
+- **Open in Vim:** 
+  ```bash
+  vim <filename>
+  ```
 
 ---
 
 ### **Git Workflow**
 
+---
+
 **Initialization & Cloning:**
-- `git init`: Initialize a new Git repository.
-- `git clone https://...`: Clone a repository.
+
+- **Initialize Git Repository:** 
+  ```bash
+  git init
+  ```
+
+- **Clone a Repository:** 
+  ```bash
+  git clone https://...
+  ```
+
+---
 
 **Inspecting & Comparing:**
-- `git status`: Display the state of the workspace.
-- `git log`: Show commit logs.
-  - `git log --graph --pretty --oneline --all`: Graphical display of commits.
-  - `git log -p`: Show commit logs with patch differences.
+
+- **Display Workspace State:** 
+  ```bash
+  git status
+  ```
+
+- **Show Commit Logs:** 
+  ```bash
+  git log
+  ```
+
+- **Graphical Display of Commits:** 
+  ```bash
+  git log --graph --pretty --oneline --all
+  ```
+
+- **Commit Logs with Differences:** 
+  ```bash
+  git log -p
+  ```
+
+---
 
 **Branching & Navigation:**
-- `git branch -vv`: View all branches.
-- `git checkout <branch_name>`: Switch to a branch.
-  - `git checkout -b <branch_name>`: Create and switch to a new branch.
+
+- **View All Branches:** 
+  ```bash
+  git branch -vv
+  ```
+
+- **Switch to a Branch:** 
+  ```bash
+  git checkout <branch_name>
+  ```
+
+- **Create and Switch to New Branch:** 
+  ```bash
+  git checkout -b <branch_name>
+  ```
+
+---
 
 **Staging & Committing:**
-- `git add -p`: Interactively choose patches to stage.
-- `git commit -m "message"`: Commit with a message.
-  - `git commit --amend`: Modify the latest commit.
+
+- **Choose Patches to Stage:** 
+  ```bash
+  git add -p
+  ```
+
+- **Commit with a Message:** 
+  ```bash
+  git commit -m "message"
+  ```
+
+- **Modify Latest Commit:** 
+  ```bash
+  git commit --amend
+  ```
+
+---
 
 **Rebasing & Merging:**
-- `git rebase -i HEAD~N`: Interactively rebase last N commits.
-- `git pull —rebase`: Pull changes and rebase.
+
+- **Interactively Rebase Last N Commits:** 
+  ```bash
+  git rebase -i HEAD~N
+  ```
+
+- **Pull and Rebase:** 
+  ```bash
+  git pull —rebase
+  ```
+
+---
 
 **Push & Pull:**
-- `git pull`: Fetch and merge changes.
-- `git push`: Push changes.
+
+- **Fetch and Merge Changes:** 
+  ```bash
+  git pull
+  ```
+
+- **Push Changes:** 
+  ```bash
+  git push
+  ```
+
+---
 
 **Resetting & Restoring:**
-- `git reset --soft/hard <commit>`: Reset to a commit.
-- `git restore <filename>`: Unstage or overwrite changes in files.
-- `git clean -d -n/f`: Show or remove untracked files and directories.
+
+- **Reset to a Commit:** 
+  ```bash
+  git reset --soft/hard <commit>
+  ```
+
+- **Unstage or Overwrite File Changes:** 
+  ```bash
+  git restore <filename>
+  ```
+
+- **Show or Remove Untracked Files:** 
+  ```bash
+  git clean -d -n/f
+  ```
 
 ---
 
 ### **File and Directory Transfer**
 
+---
+
 **Secure Copy Operations:**
-- `scp <source> <destination>`: Securely copy a file from the source to the destination.
-  - `scp -r cloudpath localpath`: Securely copy a directory (and its contents) from a remote path to a local path.
+
+- **Securely Copy a File:** 
+  ```bash
+  scp <source> <destination>
+  ```
+
+- **Securely Copy a Directory:** 
+  ```bash
+  scp -r cloudpath localpath
+  ```
+
+---
+
 
